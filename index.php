@@ -3,6 +3,7 @@
 
 <head>
     <link id="style" rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hover.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <meta charset="UTF-8">
@@ -11,17 +12,34 @@
 </head>
 
 <body>
+
     <!-- ----------------------------------------------------------------------- -->
     <!--                                 HEADER                                  -->
     <!-- ----------------------------------------------------------------------- -->
     <header>
         <div class="menu-area">
             <ul>
-                <li><a id="apropos" href="#apropos">A propos</a></li>
-                <li><a id="competences" href="#competences">Compétence</a></li>
-                <li><a id="projets" href="#projets">Projets</a></li>
-                <li><a id="formation" href="#formation">Formation et experience</a></li>
-                <li><a id="contact" href="#contact">Contact</a></li>
+                <li><a id="accueillink" href="#cover">Accueil</a></li>
+                <li><a id="aproposlink" href="#apropos">A propos</a></li>
+                <li><a id="competenceslink" href="#competences">Compétence</a></li>
+                <li><a id="projectslink" href="#projects">Projets</a></li>
+                <li><a id="formationlink" href="#formation">Formation et experience</a></li>
+                <li><a id="contactlink" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div id="menu_burger">
+            <h3 id="menu_burger_nom" class="animate__animated animate__bounceInLeft">Pierre Gonzales</h3>
+            <img id="burgerBtn" src="media/Hamburger.svg" alt="">
+            <h3 id="menu_burger_dev" class="animate__animated animate__bounceInLeft">Développeur Web Junior</h3>
+        </div>
+        <div id="menu_nav">
+            <ul>
+                <li><a id="accueillink" href="#cover">Accueil</a></li>
+                <li><a id="aproposlink" href="#apropos">A propos</a></li>
+                <li><a id="competenceslink" href="#competences">Compétence</a></li>
+                <li><a id="projectslink" href="#projects">Projets</a></li>
+                <li><a id="formationlink" href="#formation">Formation et experience</a></li>
+                <li><a id="contactlink" href="#contact">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -39,7 +57,7 @@
                 <button id="switch">Switch Style</button>
             </div>
         </div>
-        <h3 id="dev" class="animate__animated animate__bounceInLeft">Développeur Junior</h3>
+        <h3 id="dev" class="animate__animated animate__bounceInLeft">Développeur Web Junior</h3>
     </div>
 
     <!-- ----------------------------------------------------------------------- -->
@@ -66,56 +84,74 @@
             <div id="aligncontent">
                 <div id="contenerlogo">
                     <div class="logo">
-                        <img src="media/Logohtml.svg" alt="">
+                        <img src="media/Logohtml.svg" alt="" class="hvr-bob">
                         <p>HTML</p>
                     </div>
                     <div class="logo">
-                        <img src="media/Logocss.svg" alt="">
+                        <img src="media/Logocss.svg" alt="" class="hvr-bob">
                         <p>CSS</p>
                     </div>
                     <div class="logo">
-                        <img src="media/Logojavascript.svg" alt="">
+                        <img src="media/Logojavascript.svg" alt="" class="hvr-bob">
                         <p>JAVASCRIPT</p>
                     </div>
                     <div class="logo">
-                        <img src="media/Logophp.svg" alt="">
+                        <img src="media/Logophp.svg" alt="" class="hvr-bob">
                         <p>PHP</p>
                     </div>
                     <div class="logo">
-                        <img src="media/Logoillustrator.svg" alt="">
+                        <img src="media/Logoillustrator.svg" alt="" class="hvr-bob">
                         <p>ILLUSTRATOR</p>
                     </div>
                     <div class="logo">
-                        <img src="media/Logophotoshop.svg" alt="">
+                        <img src="media/Logophotoshop.svg" alt="" class="hvr-bob">
                         <p>PHOTOSHOP</p>
                     </div>
                     <div class="logo">
-                        <img src="media/Logobootstrap.svg" alt="">
+                        <img src="media/Logobootstrap.svg" alt="" class="hvr-bob">
                         <p>BOOTSTRAP</p>
                     </div>
                     <div class="logo">
-                        <img src="media/Logosass.svg" alt="">
+                        <img src="media/Logosass.svg" alt="" class="hvr-bob">
                         <p>SASS</p>
                     </div>
                     <div class="logo">
-                        <img src="media/Logomysql.svg" alt="">
+                        <img src="media/Logomysql.svg" alt="" class="hvr-bob">
                         <p>MYSQL</p>
                     </div>
                     <div class="logo">
-                        <img src="media/Logosymfony.svg" alt="">
+                        <img src="media/Logosymfony.svg" alt="" class="hvr-bob">
                         <p>SYMFONY</p>
                     </div>
                 </div>
+                <div id="download">
+                    <h3>Telecharger mon CV</h3><a href=""><img src="media/download.svg" alt=""></a>
+                </div>
+
             </div>
         </section>
 
         <!-- ------------------------------- PROJETS ------------------------------- -->
-        <section data-aos="fade-up" id="projets">
+        <section data-aos="fade-up" id="projects">
             <h2 class="title">Projets</h2>
-            <div id="contenerarticle">
-                <article id="gites"></article>
-                <article id="ampoule"><img src="media/articleampoule.png" alt=""></article>
-                <article>SOON !!!</article>
+            <div id="contenerprojects">
+                <div class="parent">
+                    <article class="child bg_one" id="gites">
+                        <h3 id="">Projet Gîtes</h3>
+                        <a href="">Un projet en groupe de type location de gîtes mêlant les languages HTML, CSS, PHP,
+                            Javascript et la gestion de bases de données mySQL pour obtenir un site complet de location
+                            de residence de vacance pour les particuliers.<br><br>Ce site propose une partie utilisateur
+                            permettant de visionner et rechercher un gîte dans une region donnée et de le réserver au
+                            date choisi.</a>
+                    </article>
+                </div>
+                <div class="parent">
+                    <article class="child bg_two" id="ampoule">
+                        <h3 id="">Projet Ampoule</h3>
+                        <a href="">Un projet permettant de gérer les changements d'ampoules d'un immeuble avec affichage
+                            d'historique et ajout modification des entrée de la base de donnée</a>
+                    </article>
+                </div>
             </div>
         </section>
 
@@ -138,7 +174,7 @@
             <div id="contenercontact">
                 <div id="formulaire">
                     <h3>Contactez-moi</h3>
-                    <form action="php/mail.php" method="post">
+                    <form method="post">
                         <div id="name">
                             <div class="wrap">
                                 <label for="">Votre Nom</label>
@@ -146,7 +182,7 @@
                             </div>
                             <div class="wrap">
                                 <label for="">Votre Prénom</label>
-                                <input type="text" name="firstname" placeholder="Prénom" required>
+                                <input type="text" id="firstname" name="firstname" placeholder="Prénom" required>
                             </div>
                         </div>
                         <div class="wrap">
@@ -168,14 +204,30 @@
                     <h3>Retrouvez-moi ici:</h3>
                     <div>
                         <a href=""><img src="media/linkedin.svg" alt=""></a>
-                        <a href=""><img src="media/github.svg" alt=""></a>
+                        <a href="https://github.com/pierre01470"><img src="media/github.svg" alt=""></a>
                     </div>
                 </div>
             </div>
         </section>
 
-
     </main>
+    <?php
+    if (isset($_POST['submit']) && !empty($_POST['message'])) {
+        $dest = "gonzales.pierre01470@gmail.com";
+        $send = $_POST['email'];
+        $sujet = $_POST['object'];
+        $message = $_POST['lastname'] . ' ' . $_POST['firstname'] . '</br>' . $_POST['message'];
+        $header = "From: $send";
+
+        $mail = mail($dest, $sujet, $message, $header);
+        if($mail){
+            echo '<div id="modal">
+                <p>Votre mail à été envoyé</p>
+                    </div>';
+        }
+    }
+    ?>
+    
 </body>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
